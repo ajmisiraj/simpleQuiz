@@ -3,8 +3,7 @@ body{
 }
  .heading{
      color: rgb(13, 79, 82);
-     width: max-content;
-     padding-left: 40%;
+     text-align: center;
      font-weight: bold;
  }
  .radio{
