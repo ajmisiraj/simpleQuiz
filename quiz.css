@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(220, 252, 255);
+}
+ .heading{
+     color: rgb(13, 79, 82);
+     width: max-content;
+     padding-left: 40%;
+     font-weight: bold;
+ }
+ .radio{
+     background-color: #a7ecf0;
+     color: rgb(9, 88, 105);
+     display: block;
+     width: auto;
+     position: relative;
+     padding: 10px 10px 10px 50px;
+     margin-bottom: 1px;
+     cursor: pointer;
+     font-size: 18px;
+     user-select: none;
+     word-wrap: break-word;
+ }
+ input[type=submit] {
+    background-color: #05476d;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    display: block;
+    position: relative; 
+    text-align: center;
+  }
+p{
+    text-align: center;
+    color: rgb(9, 90, 63);
+}
+.footer{
+    color: rgb(48, 8, 85);
+    vertical-align: super;
+    align-self:auto;
+}
+input[type="submit"]:hover{
+    background: #1d0138;
+}
+h2{
+    color: #1d0138;
+}

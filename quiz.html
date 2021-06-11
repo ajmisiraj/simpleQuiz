@@ -1,0 +1,154 @@
+<!--Write an HTML program to create Quiz program with set of 5 multiple choice questions. 
+        A script should run which calculates the total score and prints it as an alert message.
+        The score may be calculated as 2 marks for each correct answer.-->
+       
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="icon" type="image/icon" href="https://image.flaticon.com/icons/png/512/16/16268.png">
+    <link rel="stylesheet" href="quiz.css" type="text/css">
+    <script src="quiz.js"></script>
+    <!--external link for acquaring a container-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+</head>
+<body>
+    <div class="w3-container"> 
+        <div class="main" style="width: auto; height: auto;">
+        <form>
+            <h1 class="heading">It's Quiz Time.</h1>
+            <p>Let's have some fun. Try to answer these questions. <br>Each correct answer will give you 2 marks and incorrect will not be taken.</p>
+            <div class="q1">
+                <h2>1.Name Disney’s first film?</h2>
+               <div style="position: relative;width: auto;">
+                    <label class="radio">
+                        <input type="radio" name="quiz1" >Bambi
+                    </label>
+               </div>
+               <div style="position: relative;width: 100%;">
+                    <label class="radio">
+                        <input type="radio" name="quiz1" >Pinocchio
+                    </label>
+                </div>
+                <div style="position: relative;width: 100%;">
+                    <label class="radio">
+                        <input type="radio" name="quiz1" id="correct1" >Snow White
+                    </label>
+                </div>
+                <div style="position: relative;width: 100%;">
+                    <label class="radio">
+                        <input type="radio" name="quiz1" >Cindrella
+                    </label>
+                </div>
+            </div>
+            <div class="q2">
+                <h2>2.Name Pixar’s first feature-length movie?</h2>
+                <div style="position: relative;width: 100%;">
+                    <label class="radio" >
+                        <input type="radio" name="quiz2" id="correct2">Toy Story
+                    </label>
+                </div>
+                <div style="position: relative;width: 100%;">
+                        <label class="radio">
+                            <input type="radio" name="quiz2" >Finding Nemo
+                        </label>
+                </div>
+                <div  style="position: relative;width: 100%;">
+                        <label class="radio">
+                            <input type="radio" name="quiz2" >Brave
+                        </label>
+                </div>
+                <div style="position: relative;width: 100%;">
+                        <label class="radio" >
+                            <input type="radio" name="quiz2" >Ratatouille
+                        </label>
+                </div>
+            </div>
+            <div class="q3">
+                <h2>3.What's the only book in the Harry Potter series that doesn't feature Lord Voldemort?</h2>
+                <div style="position: relative;width: 100%;">
+                    <label class="radio">
+                        <input type="radio" name="quiz3" >The Sorcerer's Stone
+                    </label>
+                </div>
+                <div style="position: relative;width: 100%;">
+                        <label class="radio">
+                            <input type="radio" name="quiz3" id="correct3" >The Prisoner of Azkaban
+                        </label>
+                </div>
+                <div  style="position: relative;width: 100%;">
+                        <label class="radio">
+                            <input type="radio" name="quiz3" >The Chamber of Secrets
+                        </label>
+                </div>
+                <div style="position: relative;width: 100%;">
+                        <label class="radio">
+                            <input type="radio" name="quiz3" >The Half Blood Prince
+                        </label>
+                </div>    
+            </div>
+            <div class="q4">
+                <h2>4.Which of these are not the book of Sir Arthur Conan Doyle ?</h2>
+                <div style="position: relative;width: 100%;">
+                    <label class="radio" >
+                        <input type="radio" name="quiz4" >The Lost World
+                    </label>
+                </div>
+                <div style="position: relative;width: 100%;">
+                        <label class="radio" >
+                            <input type="radio" name="quiz4" >The Poison Belt
+                        </label>
+                </div>
+                <div  style="position: relative;width: 100%;">
+                        <label class="radio">
+                            <input type="radio" name="quiz4" >The Adventures of Sherlock Homes
+                        </label>
+                </div>
+                <div style="position: relative;width: 100%;">
+                        <label class="radio" >
+                            <input type="radio" name="quiz4" id="correct4" >A Brief History of Time
+                        </label>
+                </div>     
+            </div>
+            <div class="q5">
+                <h2>5.Who created Mickey Mouse?</h2>
+                <div style="position: relative;width: 100%;">
+                    <label class="radio" id="beop1">
+                        <input type="radio" name="quiz5" >Warner Bros
+                    </label>
+                </div>
+                <div  style="position: relative;width: 100%;">
+                        <label class="radio" >
+                            <input type="radio" name="quiz5" >Finding Nemo
+                        </label>
+                </div>
+                <div style="position: relative;width: 100%;">
+                        <label class="radio" >
+                            <input type="radio" name="quiz5" id="correct5" >Walt Disney
+                        </label>
+                </div>
+                <div  style="position: relative;width: 100%;">
+                        <label class="radio" >
+                            <input type="radio" name="quiz5" >Pixar
+                        </label>
+                </div>    
+            </div>
+            <div style="text-align: center; margin: auto; padding-top: 3%;">
+                <input type="submit" value="Submit your answer" name="submit" onclick="quizResult()" >
+                <input type="submit" value="Check your answer" name="submit" onclick="quizAnswers()" >
+            </div>
+           
+        </form>
+        </div>
+        <footer>
+            <p class="footer">
+                Quiz is created by Ajmi N.S.<br>Thank you!
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
